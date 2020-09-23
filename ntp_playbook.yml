@@ -13,8 +13,7 @@
 
   tasks:
 
-  - name: "GET CONFIG"
-    ios_command:
+  - ios_command:
       commands:
         - "show running-config full | include ntp server"
     register: get_config
